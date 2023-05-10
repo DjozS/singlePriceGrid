@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    background-color:hsl(204, 43%, 93%);
+    font-family: 'Karla', sans-serif;
+}
+main{
+    display:flex;
+    flex-direction: column;
+    height:480px;
+    width:640px;
+    background:white;
+    box-shadow:0px 10px 10px rgba(0, 0, 0, 0.0973011);
+    border-radius:10px;
+}
+.container1{
+    height:220px;
+    padding:40px;
+}
+.container2{
+    display:flex;
+    height:260px;
+    color:white;
+}
+.priceDiv{
+    display:flex;
+    width:320px;
+    flex-direction: column;
+    height:100%;
+    background:hsl(179, 62%, 43%);
+    border-bottom-left-radius: 10px;
+    padding:40px;
+}
+.descDiv{
+    background:hsla(179, 62%, 43%, 84.81%);
+    border-bottom-right-radius: 10px;
+    height:100%;
+    width:320px;
+    padding:40px;
+}
+li{
+    list-style: none;
+    font-size:14px;
+    opacity:0.8;
+    line-height:1.4;
+}
+button{
+    height:45px;
+    border:none;
+    border-radius:5px;
+    color:white;
+    background:hsl(71, 73%, 54%);
+    margin-top:30px;
+    font-weight: 700;
+    box-shadow:0px 10px 10px rgba(0, 0, 0, 0.0973011);
+}
+h1{
+    margin-bottom:20px;
+    color:hsl(179, 62%, 43%);
+    font-size:23px;
+    font-weight: 700;
+}
+h2{
+    font-size:18px;
+}
+p{
+    font-size:16px;
+    line-height: 1.5;
+    color:hsl(218, 22%, 67%);
+}
+#mnybck{
+    color:hsl(71, 73%, 54%);
+    margin-bottom:15px;
+}
+#monthSub{
+    margin-bottom:15px;
+}
+#price{
+    font-size:26px;
+    margin-bottom:8px;
+}
+#whyUs{
+    margin-bottom:15px;
+}
+#fullAcces{
+    color:white;
+    opacity:0.8;
+}
+span{
+    font-size:16px;
+    font-weight:400;
+    opacity:0.6;
+    margin-left:10px;
+    position: relative;
+    bottom:5%;
+}
+@media(max-width:500px){
+    body{
+        min-height:80vh;
+    }
+  main{
+    display:flex;
+    flex-direction:column;
+    width:375px;
+  }
+  .container1{
+    height:250px;
+    margin-bottom: 20px;
+  }
+  .container2{
+    flex-direction: column;
+  }
+  .priceDiv{
+    height:250px;
+    border-bottom-left-radius: 0;
+    min-width:375px;
+  }
+  .descDiv{
+    height:250px;
+    min-width:375px;
+    border-bottom-left-radius: 10px;
+  }
+  
+}
